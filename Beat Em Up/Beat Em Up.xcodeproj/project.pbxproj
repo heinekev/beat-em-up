@@ -151,6 +151,8 @@
 		2E1D14C21642B7AE00A2F4F2 /* pd_sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D14B71642B7AE00A2F4F2 /* pd_sprites.pvr.ccz */; };
 		2E1D14C31642B7AE00A2F4F2 /* pd_tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D14B81642B7AE00A2F4F2 /* pd_tilemap.tmx */; };
 		2E1D14C41642B7AE00A2F4F2 /* pd_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D14B91642B7AE00A2F4F2 /* pd_tiles.png */; };
+		3CE40B241643132A0049F803 /* ActionSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE40B231643132A0049F803 /* ActionSprite.m */; };
+		3CE40B29164344940049F803 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE40B28164344940049F803 /* Hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -441,6 +443,11 @@
 		2E1D14B71642B7AE00A2F4F2 /* pd_sprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = pd_sprites.pvr.ccz; sourceTree = "<group>"; };
 		2E1D14B81642B7AE00A2F4F2 /* pd_tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pd_tilemap.tmx; sourceTree = "<group>"; };
 		2E1D14B91642B7AE00A2F4F2 /* pd_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pd_tiles.png; sourceTree = "<group>"; };
+		3CE40B221643132A0049F803 /* ActionSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSprite.h; sourceTree = "<group>"; };
+		3CE40B231643132A0049F803 /* ActionSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSprite.m; sourceTree = "<group>"; };
+		3CE40B26164332E80049F803 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
+		3CE40B27164344940049F803 /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		3CE40B28164344940049F803 /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -499,6 +506,11 @@
 		2E1D130F1642B25600A2F4F2 /* Beat Em Up */ = {
 			isa = PBXGroup;
 			children = (
+				3CE40B27164344940049F803 /* Hero.h */,
+				3CE40B28164344940049F803 /* Hero.m */,
+				3CE40B26164332E80049F803 /* Defines.h */,
+				3CE40B221643132A0049F803 /* ActionSprite.h */,
+				3CE40B231643132A0049F803 /* ActionSprite.m */,
 				2E1D14961642B25800A2F4F2 /* AppDelegate.h */,
 				2E1D14A41642B33800A2F4F2 /* GameScene.h */,
 				2E1D14A51642B33800A2F4F2 /* GameScene.m */,
@@ -1112,6 +1124,8 @@
 				2E1D14A61642B33800A2F4F2 /* GameScene.m in Sources */,
 				2E1D14A91642B36E00A2F4F2 /* GameLayer.m in Sources */,
 				2E1D14AC1642B37D00A2F4F2 /* HudLayer.m in Sources */,
+				3CE40B241643132A0049F803 /* ActionSprite.m in Sources */,
+				3CE40B29164344940049F803 /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1223,6 +1237,7 @@
 				2E1D14A31642B25800A2F4F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

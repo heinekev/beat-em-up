@@ -1,0 +1,37 @@
+//
+//  Hero.m
+//  Beat Em Up
+//
+//  Created by Abideen Onalaja on 02/11/2012.
+//  Copyright 2012 Abideen Onalaja. All rights reserved.
+//
+
+#import "Hero.h"
+
+
+@implementation Hero
+
+
+-(id)init {
+    if ((self = [super initWithSpriteFrameName:@"hero_idle_00.png"])) {
+        int i;
+        
+        //idle animation
+        CCArray *idleFrames = [CCArray arrayWithCapacity:6];
+        for (i = 0; i < 6; i++) {
+            CCSpriteFrame *frame = [[CCSpriteFrameCache sharedSpriteFrameCache] spriteFrameByName:[NSString stringWithFormat:@"hero_idle_%02d.png", i]];
+            [idleFrames addObject:frame];
+        }
+        CCAnimation *idleAnimation = [CCAnimation animationWithSpriteFrames:[idleFrames getNSArray] delay:1.0/12.0];
+        self.idleAction = [CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:idleAnimation]];
+        
+        self.centerToBottom = 39.0;
+        self.centerToSides = 29.0;
+        self.hitPoints = 100.0;
+        self.damage = 20.0;
+        self.walkSpeed = 80;
+    }
+    return self;
+}
+
+@end

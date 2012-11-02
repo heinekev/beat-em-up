@@ -8,8 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "Hero.h"
 
 @interface GameLayer : CCLayer {
+
+    CCTMXTiledMap *_tileMap;
+    CCSpriteBatchNode *_actors;
+    Hero *_hero;
     
 }
 
