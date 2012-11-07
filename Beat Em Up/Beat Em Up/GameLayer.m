@@ -14,12 +14,15 @@
 -(id)init {
     if (self = [super init]) {
         [self initTileMap];
+        self.isTouchEnabled = YES;
         
         [[CCSpriteFrameCache sharedSpriteFrameCache] addSpriteFramesWithFile:@"pd_sprites.plist"];
         _actors = [CCSpriteBatchNode batchNodeWithFile:@"pd_sprites.pvr.ccz"];
         [_actors.texture setAliasTexParameters];
         [self addChild:_actors z:-5];
         [self initHero];
+        
+        
     }
     
     return self;
@@ -42,6 +45,10 @@
     _hero.position = ccp(_hero.centerToSides, 80);
     _hero.desiredPosition = _hero.position;
     [_hero idle];
+}
+
+-(void)ccTouchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [_hero attack];
 }
 
 @end

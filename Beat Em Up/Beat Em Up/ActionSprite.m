@@ -20,4 +20,15 @@
     }
 }
 
+-(void)attack {
+    if(_actionState == kActionStateIdle
+       || _actionState == kActionStateAttack
+       || _actionState == kActionStateWalk) {
+        [self stopAllActions];
+        NSLog(@"_idleAction %@",_idleAction);
+        [self runAction:_attackAction];
+        _actionState = kActionStateAttack;
+    }
+}
+
 @end
