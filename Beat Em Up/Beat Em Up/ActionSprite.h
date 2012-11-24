@@ -35,6 +35,10 @@
 //measurements
 @property(nonatomic,assign)float centerToSides;
 @property(nonatomic, assign)float centerToBottom;
+@property(nonatomic,assign)BoundingBox hitBox;
+@property(nonatomic,assign)BoundingBox attackBox;
+
+-(BoundingBox)createBoundingBoxWithOrigin:(CGPoint)origin size:(CGSize)size;
 
 //actionMethods
 -(void)idle;

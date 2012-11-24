@@ -16,6 +16,6 @@
 }
 
 @property(nonatomic, weak)GameLayer *gameLayer;
-@property(nonatomic, weak)HudLayer *hudlayer;
+@property(nonatomic, weak)HudLayer *hudLayer;
 
 @end

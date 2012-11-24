@@ -151,6 +151,8 @@
 		2E1D14C21642B7AE00A2F4F2 /* pd_sprites.pvr.ccz in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D14B71642B7AE00A2F4F2 /* pd_sprites.pvr.ccz */; };
 		2E1D14C31642B7AE00A2F4F2 /* pd_tilemap.tmx in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D14B81642B7AE00A2F4F2 /* pd_tilemap.tmx */; };
 		2E1D14C41642B7AE00A2F4F2 /* pd_tiles.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E1D14B91642B7AE00A2F4F2 /* pd_tiles.png */; };
+		2EC564031653D08E0091920A /* SimpleDPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC564021653D08E0091920A /* SimpleDPad.m */; };
+		2EC564071653D60B0091920A /* Robot.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC564061653D60B0091920A /* Robot.m */; };
 		3CE40B241643132A0049F803 /* ActionSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE40B231643132A0049F803 /* ActionSprite.m */; };
 		3CE40B29164344940049F803 /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE40B28164344940049F803 /* Hero.m */; };
 /* End PBXBuildFile section */
@@ -443,6 +445,10 @@
 		2E1D14B71642B7AE00A2F4F2 /* pd_sprites.pvr.ccz */ = {isa = PBXFileReference; lastKnownFileType = file; path = pd_sprites.pvr.ccz; sourceTree = "<group>"; };
 		2E1D14B81642B7AE00A2F4F2 /* pd_tilemap.tmx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = pd_tilemap.tmx; sourceTree = "<group>"; };
 		2E1D14B91642B7AE00A2F4F2 /* pd_tiles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pd_tiles.png; sourceTree = "<group>"; };
+		2EC564011653D08E0091920A /* SimpleDPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleDPad.h; sourceTree = "<group>"; };
+		2EC564021653D08E0091920A /* SimpleDPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleDPad.m; sourceTree = "<group>"; };
+		2EC564051653D60B0091920A /* Robot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Robot.h; sourceTree = "<group>"; };
+		2EC564061653D60B0091920A /* Robot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Robot.m; sourceTree = "<group>"; };
 		3CE40B221643132A0049F803 /* ActionSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSprite.h; sourceTree = "<group>"; };
 		3CE40B231643132A0049F803 /* ActionSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSprite.m; sourceTree = "<group>"; };
 		3CE40B26164332E80049F803 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
@@ -508,6 +514,8 @@
 			children = (
 				3CE40B27164344940049F803 /* Hero.h */,
 				3CE40B28164344940049F803 /* Hero.m */,
+				2EC564011653D08E0091920A /* SimpleDPad.h */,
+				2EC564021653D08E0091920A /* SimpleDPad.m */,
 				3CE40B26164332E80049F803 /* Defines.h */,
 				3CE40B221643132A0049F803 /* ActionSprite.h */,
 				3CE40B231643132A0049F803 /* ActionSprite.m */,
@@ -516,6 +524,8 @@
 				2E1D14A51642B33800A2F4F2 /* GameScene.m */,
 				2E1D14A71642B36E00A2F4F2 /* GameLayer.h */,
 				2E1D14A81642B36E00A2F4F2 /* GameLayer.m */,
+				2EC564051653D60B0091920A /* Robot.h */,
+				2EC564061653D60B0091920A /* Robot.m */,
 				2E1D14AA1642B37D00A2F4F2 /* HudLayer.h */,
 				2E1D14AB1642B37D00A2F4F2 /* HudLayer.m */,
 				2E1D14971642B25800A2F4F2 /* AppDelegate.m */,
@@ -1126,6 +1136,8 @@
 				2E1D14AC1642B37D00A2F4F2 /* HudLayer.m in Sources */,
 				3CE40B241643132A0049F803 /* ActionSprite.m in Sources */,
 				3CE40B29164344940049F803 /* Hero.m in Sources */,
+				2EC564031653D08E0091920A /* SimpleDPad.m in Sources */,
+				2EC564071653D60B0091920A /* Robot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
